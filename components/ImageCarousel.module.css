@@ -1,0 +1,86 @@
+.mySwiper {
+    width: 100%;
+    height: 100vh;
+    color: #6C6817;
+  }
+  
+  .swiperSlide {
+    margin: 1.3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+  }
+
+  .upperText {
+    color: #000;
+    text-align: center;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 80%;
+    height: 20rem;
+    flex-shrink: 0;
+  }
+
+  .imageWrapper img {
+    border-radius: 6rem;
+  }
+  
+  .lowerText {
+    text-align: center;
+    height: 100%;
+    margin-top: 1.2rem;
+    border-radius: 50px 50px 0 0;
+  }
+
+  .innerWrapper {
+    padding: 1.5rem;
+  }
+
+  .title, .subtitle, .description {
+    color: #000;
+    margin: 1rem 0;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .title {
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-family: "PT Serif";
+    font-size: 1.5rem;
+    font-style: italic;
+    
+  }
+  
+  .descTitle{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: "DM Sans";
+  }
+
+  .description {
+    text-align: center;
+    font-family: "PT Serif";
+    font-size: 1.3rem;
+    font-style: normal;
+    letter-spacing: 0.04rem;
+  }
+
+  
+  
