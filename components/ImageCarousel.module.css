@@ -21,13 +21,13 @@
   
   .imageWrapper {
     position: relative;
-    width: 80%;
-    height: 20rem;
+    width: 70%;
+    height: 18rem;
     flex-shrink: 0;
   }
 
   .imageWrapper img {
-    border-radius: 6rem;
+    border-radius: 4rem;
   }
   
   .lowerText {
