@@ -23,14 +23,9 @@ body {
   box-sizing: border-box;
   height: 100%;
   overflow-x: hidden; /* Prevent horizontal scroll */
+  -webkit-overflow-scrolling: touch;
 }
 
 #slider {
   margin-top: 20px;
-}
-
-@media only screen and (max-width: 512px) {
-  body {
-    -webkit-overflow-scrolling: touch;
-  }
 }
