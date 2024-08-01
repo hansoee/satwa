@@ -20,6 +20,18 @@ export default function ImageCarousel(){
             <div className={styles.innerWrapper}>
               <h4 className={styles.subtitle}>{image.subtitle}</h4>
               <h1 className={styles.title}>{image.title}</h1>
+              <div className={styles.iucn} style={{
+                                              backgroundColor: image.iucn === 'Punah' ? '#4E4336' : 
+                                                              image.iucn === 'Punah di Alam Liar' ? '#85618D' : 
+                                                              image.iucn === 'Kritis' ? '#C52412' :
+                                                              image.iucn === 'Terancam Punah' ? '#F28533' :
+                                                              image.iucn === 'Rentan' ? '#FFC90E' :
+                                                              image.iucn === 'Hampir Terancam' ? '#97C115' :
+                                                              image.iucn === 'Risiko Rendah' ? '#51BC1D' :
+                                                              image.iucn === 'Data Kurang' ? '#C3C3C3' : '#E5E5E5'
+                                              }}>
+                                                {image.iucn}
+              </div>
             </div>
           </div>
           <div className={styles.imageWrapper}>
