@@ -1,16 +1,16 @@
-import React from 'react';
 import ImageCarousel from '../components/ImageCarousel';
+import Slider from '../components/Slider'
+import useWindowSize from '../hooks/useWindowSize';
 import styles from '../styles/Home.module.css';
 
-const Home: React.FC = () => {
+export default function Home(){
+  const size = useWindowSize();
+
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        {/* <h1 className={styles.title}>Satwa Alam Coban Talun</h1> */}
-        <ImageCarousel />
+        {size.width > 768 ? <Slider /> : <ImageCarousel />}
       </main>
     </div>
   );
 };
-
-export default Home;

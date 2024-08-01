@@ -45,9 +45,9 @@ const ImageCarousel: React.FC = () => {
               <p className={styles.description}>{image.description}</p>
             </div>
           </div>
-          {/* <svg xmlns="http://www.w3.org/2000/svg" width="390" height="308" viewBox="0 0 390 308" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="390" height="308" viewBox="0 0 390 308" fill="none">
             <path d="M390 308V28C390 28 302.696 0 195 0C87.3045 0 0 24 0 24V308H390Z" fill="#6C6817"/>
-          </svg> */}
+          </svg>
         </SwiperSlide>
       ))}
     </Swiper>
