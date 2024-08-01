@@ -1,6 +1,15 @@
 import styles from './Slider.module.css';
 
-const images = [
+type Image = {
+    src: string;
+    alt: string;
+    title: string;
+    subtitle: string;
+    description: string;
+  };
+  
+
+const images: Image[] = [
     { src: '/images/cekakJawa.JPG', alt: 'Cekak Jawa', title: 'Cekak Jawa', subtitle:'Halcyon cyanoventris', description: 'Cekak Jawa adalah karnivora kecil dengan tubuh ramping dan ekor panjang berbelang, terkenal dengan kecepatan dan kelincahannya.' },
     { src: '/images/takurTulungTumpuk.JPG', alt: 'Takur Tulung Tumpuk', title: 'Takur Tulung Tumpuk', subtitle:'Megalaima javensis', description: 'Burung ini dikenal dengan panggilan kerasnya dan paruh besar berwarna cerah yang digunakan untuk memakan buah-buahan dan serangga.' },
     { src: '/images/elang-ularBido.jpg', alt: 'Elang-ular Bido', title: 'Elang-ular Bido', subtitle: 'Spilornis cheela', description: 'Burung ini dikenal dengan panggilan kerasnya dan paruh besar berwarna cerah yang digunakan untuk memakan buah-buahan dan serangga.' },
@@ -14,10 +23,10 @@ const images = [
     { src: '/images/elang-alapCina.JPG', alt: 'Elang Alap Cina', title: 'Elang Alap Cina', subtitle: 'Accipiter soloensis', description: 'Jelarang adalah tupai raksasa dengan warna bulu yang kontras, sering terlihat melompat di antara pepohonan tinggi di hutan tropis Asia.' },
   ];
 
-function splitArray(array) {
+function splitArray(array: Image[]): [Image[], Image[]] {
     const middleIndex = Math.ceil(array.length / 2);
     return [array.slice(0, middleIndex), array.slice(middleIndex)];
-}
+}  
 
 export default function Slider(){
     const [firstRow, secondRow] = splitArray(images);
