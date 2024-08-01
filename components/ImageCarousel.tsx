@@ -28,7 +28,16 @@ export default function ImageCarousel(){
           <div className={styles.lowerText}>
             <div className={styles.innerWrapper}>
               <h2 className={styles.descTitle}>Fakta Menarik</h2>
-              <p className={styles.description}>{image.description}</p>
+              <p className={styles.description}>{image.description}
+                <sup>
+                  <a href={image.link} style={{
+                                              color: 'blue',
+                                              textDecoration: 'none',
+                                              }}> 
+                    [{index+1}]
+                  </a>
+                </sup>
+              </p>
             </div>
           </div>
         </SwiperSlide>
